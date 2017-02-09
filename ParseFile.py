@@ -16,16 +16,14 @@ def main():
                 linesList.insert(linesList.index(x)+i,'.')
                 i += 1
     j = 9
-    k = 0
     while j < len(linesList):
-        linesList.insert(j, '\n')
-        k += 1
-        print(k)
-        j += 9 + k
-        print(j)
+        linesList.insert(j, '**')
+        j += 10
+
 
     print(newAreaIndex)
-    print(linesList)
+    for x in linesList:
+        print(x)
     return
 
 if __name__ == "__main__":
